@@ -6,39 +6,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body> 
+    <div class="menue">
+    <a class="menu_a" href="./index.html">Home</a>
+    <a class="menu_a" href="./photos.html">Photo</a>
+    <a class="menu_a" href="./videos.html">Video</a>
+  </div>
     <div class="menu">
         <h1>My Videos</h1>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">=</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="./index.html">Home</a>
-                <a href="./photos.html">Photo</a>
-                <a href="./videos.html">Video</a>
-            </div>
-        </div>
+        
     </div>
-    <script>
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
+    
 
     <div class="row" id="vid">
         <iframe width="1280" height="720" src="https://www.youtube.com/embed/XBYvyhv5KiM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

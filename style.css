@@ -3,8 +3,26 @@ body{
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: black;
+    margin:0;
 }
-
+.menue{
+    display: flex;
+    /* width:100%; */
+    justify-content: center;
+    background-color: black;
+    
+}
+.menu_a{
+    text-decoration: none;
+    padding:1%;
+    color:white;
+    width:33.3%;
+    text-align:center;
+}
+.menu_a:hover{
+    background-color: white;
+    color:black;
+}
 h1{
     color:white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -20,46 +38,7 @@ h1{
     font-size: 5rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.dropbtn {
-    background-color: white;
-    color: blue;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
-    background-color:white;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    left:30%;
-    top:10%;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown a:hover {background-color: #ddd;}
-  
-  .show {display: block;}
+
   .menu{
       display: flex;
       align-items: center;
@@ -99,7 +78,7 @@ h1{
         background-color: black;
     }
   }
-  @media only screen and (max-width:800px) {
+  @media only screen and (max-width:1300px) {
       body{
           background-color: black;
       }
@@ -115,10 +94,15 @@ h1{
         margin-right:auto;
         margin-top:5%;
     }
-    .dropdown{
-        top:5%;
-        left:5%;
-  }
+    .menu_a{
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .menue{
+        display: block;
+        
+    }
   iframe{
       width:100%;
       height:30vh;
